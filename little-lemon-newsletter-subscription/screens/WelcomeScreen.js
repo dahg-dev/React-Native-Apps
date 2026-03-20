@@ -1,20 +1,36 @@
 import { View, Text, Image, Pressable, } from 'react-native';
 
+/**
+ * WelcomeScreen Component
+ *
+ * A welcome screen that serves as the entry point of the Little Lemon application.
+ * Displays the restaurant logo, a welcome message, and a call-to-action button
+ * to navigate users to the newsletter subscription screen.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {Object} props.navigation - React Navigation object for screen navigation
+ * @returns {React.ReactElement} A view containing the Little Lemon logo, welcome text, and newsletter subscription button
+ *
+ */
 const WelcomeScreen = ({ navigation }) => {
-  // Add welcome screen code here.
-  return <View style={styles.container}>
+
+return <View style={styles.container}>
     <View />
     <View>
       <Image
         source={require('../assets/little-lemon-logo.png')}
         style={styles.logo}
+        accessibilityLabel='Little Lemon Logo'
       />
       <Text style={styles.welcomeText} >Welcome to Little Lemon, your local Mediterranean Bistro</Text>
     </View>
     <Pressable onPress={() => navigation.navigate('Subscribe')} style={styles.button}>
       <Text style={styles.buttonText}>Newsletter</Text>
     </Pressable>
-  </View>;
+    <View />
+  </View>
+
 };
 
 const styles = {
