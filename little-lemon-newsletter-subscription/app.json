@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "littleLemon",
-    "slug": "littleLemon",
+    "slug": "little-lemon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ecd17be-4bfd-4dc2-8b72-9e376d2dbe98"
+      }
+    },
+    "owner": "dahg"
   }
 }
